@@ -16,28 +16,15 @@
 
 基于 DSH `0.2.1-rc.2` 开发，更低版本安装使用尚未测试。
 
-### 桌面版（推荐）
-
-1. 打开 DSH → 左侧「插件」→「添加插件」→「安装第三方插件」。
-2. 填入包名 `dsh-cost-slip`或本地化下载的 tgz 的绝对路径。
-3. 点「立即启用」，按提示重启 DSH。
-
-### Web 版
-
 ```bash
-dsh plugin --profile web add dsh-cost-slip
+dsh plugin add dsh-cost-slip
 ```
 
-然后二选一，让插件作为 bundle 层生效：
+（`dsh` 未全局安装时：`npx --yes @deepseek-ai/dsh plugin --profile web add dsh-cost-slip`）
 
-- 在 `~/.dsh/profiles/web/package.json` 的 `dsh.profile.bundles` 末尾加 `"dsh-cost-slip"`；
-- 或者把包内 `cordis.patch.yml` 的 `- insert:` 段贴到 profile 的 `cordis.patch.yml` 末尾。
+安装后重启 `dsh web` 生效。
 
-两者只能选一个，否则同一个 id 会重复。改完刷新页面；没出现就重启。
-
-### 离线包
-
-从 [Releases](https://github.com/pktheme/dsh-cost-slip/releases) 下载 `dsh-cost-slip-1.4.0.tgz`，按桌面版第 2 步填绝对路径。
+桌面版：插件 → 添加插件 → 安装第三方插件，填 `dsh-cost-slip`，启用后重启 DSH。
 
 首次安装需要联网：宿主端依赖 `zod`，由 pnpm/npm 自动安装。
 

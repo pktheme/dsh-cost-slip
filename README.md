@@ -17,7 +17,7 @@
 基于 DSH `0.2.1-rc.2` 开发，更低版本安装使用尚未测试。
 
 ```bash
-dsh plugin add dsh-cost-slip
+dsh plugin --profile web add dsh-cost-slip
 ```
 
 （`dsh` 未全局安装时：`npx --yes @deepseek-ai/dsh plugin --profile web add dsh-cost-slip`）

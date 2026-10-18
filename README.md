@@ -16,6 +16,10 @@
 
 基于 DSH `0.2.1-rc.2` 开发，更低版本安装使用尚未测试。
 
+桌面版：插件 → 添加插件 → 安装第三方插件，填 `dsh-cost-slip`，点「立即启用」后重启 DSH。
+
+Web 版：
+
 ```bash
 dsh plugin --profile web add dsh-cost-slip
 ```
@@ -23,8 +27,6 @@ dsh plugin --profile web add dsh-cost-slip
 （`dsh` 未全局安装时：`npx --yes @deepseek-ai/dsh plugin --profile web add dsh-cost-slip`）
 
 安装后重启 `dsh web` 生效。
-
-桌面版：插件 → 添加插件 → 安装第三方插件，填 `dsh-cost-slip`，启用后重启 DSH。
 
 首次安装需要联网：宿主端依赖 `zod`，由 pnpm/npm 自动安装。
 

@@ -2,7 +2,7 @@
 
 > DSH（DeepSeek Harness）插件：在输入框底部显示当前会话的估算费用（人民币），点击打开，显示费用明细和账号余额。
 
-![截图展示](docs/Screenshot.png)
+![截图展示](https://raw.githubusercontent.com/pktheme/dsh-cost-slip/main/docs/Screenshot.png)
 
 ## 功能
 

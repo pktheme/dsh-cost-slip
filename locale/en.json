@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cost slip",
+    "description": "Shows the current session's estimated cost in CNY in the composer dock; open it for the cost breakdown and account balance."
+  }
+}

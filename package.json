@@ -1,0 +1,56 @@
+{
+  "name": "dsh-cost-slip",
+  "version": "1.4.0",
+  "description": "在输入框底部显示当前会话的估算费用（人民币），点击打开，可显示费用明细和账号余额",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "cost",
+    "billing",
+    "pricing",
+    "balance"
+  ],
+  "author": "pktheme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pktheme/dsh-cost-slip.git"
+  },
+  "homepage": "https://github.com/pktheme/dsh-cost-slip#readme",
+  "bugs": {
+    "url": "https://github.com/pktheme/dsh-cost-slip/issues"
+  },
+  "dependencies": {
+    "zod": "4.4.3"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "icon.svg",
+    "locale",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

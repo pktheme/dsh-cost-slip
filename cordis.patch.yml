@@ -1,0 +1,6 @@
+# dsh-cost-slip —— 把本插件作为 bundle 层插入 profile。
+# 装好依赖后，在本 profile 的 package.json 里把 "dsh-cost-slip" 加进 dsh.profile.bundles，
+# 或者把下面这一行手工插进 profile 的 cordis.patch.yml（二选一，别同时做）。
+- insert:
+    - id: dsh-cost-slip
+      name: dsh-cost-slip
